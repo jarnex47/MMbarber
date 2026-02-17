@@ -23,9 +23,9 @@ export default function Button1({
         "transition-all duration-200",
         "bg-[#1152D4] hover:bg-[#0F4AC7]",
 
-        // Large button
+        // Large button – smaller on mobile, full size on sm+
         size === "lg" &&
-          "h-12 px-6 rounded-xl shadow-[0_15px_30px_-10px_rgba(17,82,212,0.35)]",
+          "h-10 px-4 rounded-lg sm:h-12 sm:px-6 sm:rounded-xl shadow-[0_15px_30px_-10px_rgba(17,82,212,0.35)]",
 
         // Small button
         size === "sm" &&

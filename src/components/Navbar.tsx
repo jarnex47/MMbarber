@@ -17,12 +17,12 @@ export default function Navbar() {
               height={50}
             />
           </div>
-          <span className="text-xl font-extrabold leading-7 uppercase text-white">
+          <span className="hidden sm:inline text-xl font-extrabold leading-7 uppercase text-white">
             MM Barber
           </span>
         </div>
-        <nav className="flex items-center gap-8">
-          <div className="flex items-center gap-4">
+        <nav className="flex items-center gap-4 sm:gap-8">
+          <div className="flex items-center gap-2 sm:gap-4">
             <LanguageItem lang="en" active={true} />
             <LanguageItem lang="nl" active={false} />
             <LanguageItem lang="fr" active={false} />
