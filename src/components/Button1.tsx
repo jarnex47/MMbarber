@@ -1,7 +1,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-type Size = "lg" | "sm";
+type Size = "lg" | "sm" | "xl";
 
 interface Props {
   href: string;
@@ -26,6 +26,10 @@ export default function Button1({
         // Large button – smaller on mobile, full size on sm+
         size === "lg" &&
           "h-10 px-4 rounded-lg sm:h-12 sm:px-6 sm:rounded-xl shadow-[0_15px_30px_-10px_rgba(17,82,212,0.35)]",
+
+        // Extra large button (for Hero)
+        size === "xl" &&
+          "h-14 px-8 rounded-xl text-base sm:h-16 sm:px-10 sm:text-lg shadow-[0_25px_50px_-12px_rgba(17,82,212,0.4)]",
 
         // Small button
         size === "sm" &&

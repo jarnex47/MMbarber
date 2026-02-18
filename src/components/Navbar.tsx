@@ -6,7 +6,7 @@ import Button1 from "./Button1";
 
 export default function Navbar() {
   return (
-    <header className="absolute inset-x-0 top-0 w-full z-50 border-b border-white/5 bg-black/90 backdrop-blur-md">
+    <header className="sticky top-0 w-full z-50 border-b border-white/5 bg-black/90 backdrop-blur-md">
       <div className="flex items-center justify-between h-20 max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-3">
           <div>

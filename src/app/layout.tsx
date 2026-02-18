@@ -3,6 +3,10 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import {Manrope} from "next/font/google";
 import Hero from "@/components/Hero";
+import OpeningHours from "@/components/OpeningHours";
+import Location from "@/components/Location";
+import LeaveReview from "@/components/LeaveReview";
+
 
 export const metadata: Metadata = {
   title: "MM Barber",
@@ -25,6 +29,9 @@ export default function RootLayout({
         <main className="min-h-screen">
         <Navbar />
         <Hero />
+        <OpeningHours />
+        <Location />
+        <LeaveReview />
         {children}
         </main>
       </body>
