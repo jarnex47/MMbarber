@@ -6,7 +6,8 @@ import Hero from "@/components/Hero";
 import OpeningHours from "@/components/OpeningHours";
 import Location from "@/components/Location";
 import LeaveReview from "@/components/LeaveReview";
-
+import Phone from "@/components/Phone";
+import Mail from "@/components/Mail";
 
 export const metadata: Metadata = {
   title: "MM Barber",
@@ -32,6 +33,8 @@ export default function RootLayout({
         <OpeningHours />
         <Location />
         <LeaveReview />
+        <Phone />
+        <Mail />
         {children}
         </main>
       </body>
