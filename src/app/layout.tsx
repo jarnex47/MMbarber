@@ -9,6 +9,7 @@ import LeaveReview from "@/components/LeaveReview";
 import Phone from "@/components/Phone";
 import Mail from "@/components/Mail";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 
 export const metadata: Metadata = {
@@ -75,6 +76,7 @@ export default function RootLayout({
           <Footer />
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
