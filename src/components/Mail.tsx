@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Mail() {
   return (
-    <div className="w-full max-w-[300px] min-w-0 rounded-xl bg-[#0F131A] border border-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.3)] py-3 px-3">
+    <div className="flex-1 min-w-0 rounded-xl bg-[#0F131A] border border-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.3)] py-3 px-3">
       <div className="inline-flex items-start gap-3">
         <div>
           <Image
