@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Mail() {
   return (
-    <div className="flex-1 min-w-0 rounded-xl bg-[#0F131A] border border-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.3)] py-3 px-3">
+    <div className="w-full min-w-0 max-w-[560px] mx-auto lg:mx-0 rounded-xl bg-[#0F131A] border border-white/5 shadow-[0_4px_12px_rgba(0,0,0,0.3)] py-3 px-3">
       <div className="inline-flex items-start gap-3">
         <div>
           <Image
@@ -16,9 +16,12 @@ export default function Mail() {
           <p className="text-[#64748B] text-xs font-bold leading-4 tracking-[1.2px] uppercase">
             Mail
           </p>
-          <p className="text-[#F1F5F9] text-[14px] font-bold leading-[20px]">
+          <a
+            href="mailto:info@mmbarber.be"
+            className="text-[#F1F5F9] text-[14px] font-bold leading-[20px] hover:underline"
+          >
             info@mmbarber.be
-          </p>
+          </a>
         </div>
       </div>
     </div>

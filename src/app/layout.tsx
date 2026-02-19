@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import OpeningHours from "@/components/OpeningHours";
 import Location from "@/components/Location";
 import LeaveReview from "@/components/LeaveReview";
-import Phone from "@/components/Phone";
 import Mail from "@/components/Mail";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next"
@@ -88,10 +87,7 @@ export default function RootLayout({
               </div>
               <div className="flex flex-col gap-12 flex-1 min-w-0">
                 <Location />
-                <div className="flex flex-col sm:flex-row gap-8 w-full">
-                  <Phone />
-                  <Mail />
-                </div>
+                <Mail />
               </div>
             </div>
           </div>
