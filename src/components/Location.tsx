@@ -13,7 +13,7 @@ export default function Location() {
                   height={24}
                   className="shrink-0 w-5 h-6"
                 />
-                <h3 className="text-white font-bold text-[30px] leading-[36px]">
+                <h3 className="text-white font-bold text-xl sm:text-[30px] sm:leading-[36px]">
                 Location
               </h3>
             </div>

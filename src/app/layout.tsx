@@ -40,7 +40,7 @@ export default function RootLayout({
               </div>
               <div className="flex flex-col gap-12 flex-1 min-w-0">
                 <Location />
-                <div className="flex flex-row gap-8 w-full">
+                <div className="flex flex-col sm:flex-row gap-8 w-full">
                   <Phone />
                   <Mail />
                 </div>
