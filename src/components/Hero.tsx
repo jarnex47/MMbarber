@@ -5,7 +5,7 @@ import Button1 from "./Button1";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen pt-20 flex flex-col justify-center items-center">
+    <section className="relative w-full min-h-[40vh] sm:min-h-[55vh] lg:min-h-screen pt-20 flex flex-col justify-center items-center">
 
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">

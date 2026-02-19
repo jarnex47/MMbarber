@@ -33,12 +33,12 @@ export default function RootLayout({
           <Navbar />
           <Hero />
           <div className="max-w-6xl mx-auto px-6 py-12">
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-              <div className="flex flex-col gap-12">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 w-full">
+              <div className="flex flex-col gap-12 flex-1 min-w-0">
                 <OpeningHours />
                 <LeaveReview />
               </div>
-              <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-12 flex-1 min-w-0">
                 <Location />
                 <div className="flex flex-row gap-8 w-full">
                   <Phone />

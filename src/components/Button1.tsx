@@ -7,12 +7,14 @@ interface Props {
   href: string;
   children: React.ReactNode;
   size?: Size;
+  className?: string;
 }
 
 export default function Button1({
   href,
   children,
   size = "lg",
+  className,
 }: Props) {
   return (
     <Link
@@ -33,7 +35,9 @@ export default function Button1({
 
         // Small button
         size === "sm" &&
-          "h-10 px-5 rounded-lg"
+          "h-10 px-5 rounded-lg",
+
+        className
       )}
     >
       {children}

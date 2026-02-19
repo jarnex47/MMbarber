@@ -3,7 +3,7 @@ import OpeningHoursItem from "./OpeningsHoursItem";
 
 export default function OpeningHours() {
     return (
-        <div className="flex w-full flex-col items-start gap-8"> {/*openinghours container*/}
+        <div className="flex w-full max-w-[560px] flex-col items-start gap-8 mx-auto lg:mx-0"> {/*openinghours container*/}
             <div className="flex items-center gap-3 self-stretch">
                 {/*openinghours icon and title*/}
                 <Image src="/images/clock.svg" alt="" width={20} height={20} className="w-5 h-5 shrink-0" />

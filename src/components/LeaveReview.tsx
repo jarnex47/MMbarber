@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LeaveReview() {
   return (
-    <div className="flex flex-col items-center w-full max-w-[560px] rounded-2xl border border-[rgba(17,82,212,0.20)] bg-[rgba(17,82,212,0.10)] pt-[56px] pr-[32px] pb-[48px] pl-[32px]">
+    <div className="flex flex-col items-center w-full min-w-0 max-w-[560px] mx-auto lg:mx-0 rounded-2xl border border-[rgba(17,82,212,0.20)] bg-[rgba(17,82,212,0.10)] pt-[56px] pr-[32px] pb-[48px] pl-[32px]">
       <div className="flex pb-[14px] justify-center items-center gap-1">
         {[...Array(5)].map((_, i) => (
           <Image key={i} src="/images/star.svg" alt="Star" width={24} height={24} />
