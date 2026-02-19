@@ -52,8 +52,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const barbershopSchema = {
+    "@context": "https://schema.org",
+    "@type": "Barbershop",
+    name: "MM Barber",
+    url: "https://mmbarber.be",
+    telephone: "+32 123 456 789",
+    email: "info@mmbarber.be",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Kalkoven 9",
+      addressLocality: "Asse",
+      postalCode: "1730",
+      addressCountry: "BE",
+    },
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(barbershopSchema) }}
+        />
+      </head>
       <body className={`${manrope.className} antialiased bg-gradient-to-b from-[#0A0F1A] via-[#0A0E17] to-[#080A0F]`}>
         <main className="min-h-screen">
           <Navbar />
