@@ -1,4 +1,4 @@
-# MM Barber
+# MM Barber site
 
 Landing page for MM Barber – built with Next.js and Tailwind CSS.
 
