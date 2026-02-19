@@ -12,8 +12,33 @@ import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "MM Barber",
-  description: "Professional barber services.",
+  title: {
+    default: "MM Barber | Precision & Style | Asse, Belgium",
+    template: "%s | MM Barber",
+  },
+  description:
+    "MM Barber offers professional barber services in Asse, Belgium. Precision cuts and expert styling. Book your appointment online at Kalkoven 9, 1730 Asse.",
+  keywords: ["barber", "haircut", "Asse", "Belgium", "MM Barber", "barbershop", "mens grooming"],
+  authors: [{ name: "MM Barber", url: "https://mmbarber.be" }],
+  creator: "MM Barber",
+  openGraph: {
+    type: "website",
+    locale: "en_BE",
+    url: "https://mmbarber.be",
+    siteName: "MM Barber",
+    title: "MM Barber | Precision & Style | Asse, Belgium",
+    description: "Professional barber services in Asse, Belgium. Book your appointment at Kalkoven 9, 1730 Asse.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MM Barber | Precision & Style",
+    description: "Professional barber services in Asse, Belgium.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  metadataBase: new URL("https://mmbarber.be"),
 };
 
 const manrope = Manrope({
