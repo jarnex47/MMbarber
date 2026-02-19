@@ -13,11 +13,11 @@ export default function OpeningHours() {
                 {/*openinghours list*/}
                 <OpeningHoursItem day="Monday" closed={true} />
                 <OpeningHoursItem day="Tuesday" closed={true} />
-                <OpeningHoursItem day="Wednesday" open="9:30" close="18:30" />
-                <OpeningHoursItem day="Thursday" open="9:30" close="18:30" />
-                <OpeningHoursItem day="Friday" open="9:30" close="18:30" />
-                <OpeningHoursItem day="Saturday" open="9:30" close="18:30" />
-                <OpeningHoursItem day="Sunday" open="10:30" close="18:30" />
+                <OpeningHoursItem day="Wednesday" open="9:00" close="19:00" />
+                <OpeningHoursItem day="Thursday" open="9:00" close="19:00" />
+                <OpeningHoursItem day="Friday" open="9:00" close="19:00" />
+                <OpeningHoursItem day="Saturday" open="9:00" close="19:00" />
+                <OpeningHoursItem day="Sunday" open="11:00" close="19:00" />
             </div>
         </div>
 
