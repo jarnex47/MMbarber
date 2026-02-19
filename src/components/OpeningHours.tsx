@@ -3,11 +3,11 @@ import OpeningHoursItem from "./OpeningsHoursItem";
 
 export default function OpeningHours() {
     return (
-        <div className="w-full max-w-[560px]"> {/*openinghours container*/}
-            <div className="flex justify-center items-center gap-2">
+        <div className="flex w-full flex-col items-start gap-8"> {/*openinghours container*/}
+            <div className="flex items-center gap-3 self-stretch">
                 {/*openinghours icon and title*/}
-                <Image src="/images/clock.svg" alt="" width={20} height={20} className="w-5 h-5" />
-                <h3 className="text-white text-[30px] leading-[36px] font-bold">Opening Hours</h3>
+                <Image src="/images/clock.svg" alt="" width={20} height={20} className="w-5 h-5 shrink-0" />
+                <h3 className="text-white text-[30px] leading-[36px] font-bold shrink-0">Opening Hours</h3>
             </div>
             <div className="flex flex-col items-start gap-1 p-8 rounded-2xl border border-white/5 bg-[#0F131A] w-full">
                 {/*openinghours list*/}
