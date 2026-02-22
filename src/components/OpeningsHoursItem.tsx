@@ -1,3 +1,5 @@
+"use client";
+
 interface OpeningHoursItemProps {
   day: string;
   open?: string;
