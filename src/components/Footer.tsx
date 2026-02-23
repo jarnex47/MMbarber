@@ -57,7 +57,15 @@ export default function Footer() {
             © {new Date().getFullYear()} MM Barber. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            Made by Jarne Loos
+            Made by{" "}
+            <a
+              href="https://www.linkedin.com/in/jarne-loos-2524a325a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline hover:text-slate-400 transition-colors"
+            >
+              Jarne Loos
+            </a>
           </p>
         </div>
       </div>
