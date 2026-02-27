@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 interface OpeningHoursItemProps {
   day: string;
   open?: string;
@@ -15,7 +17,14 @@ export default function OpeningHoursItem({
   close,
   closed = false,
 }: OpeningHoursItemProps) {
-  const isToday = DAYS[new Date().getDay()] === day;
+  // 1. Default to false so the server render matches the initial client render
+  const [isToday, setIsToday] = useState(false);
+
+  // 2. Run the date check only on the client after the component mounts
+  useEffect(() => {
+    setIsToday(DAYS[new Date().getDay()] === day);
+  }, [day]);
+
   const textColor = isToday ? "text-[#1152D4] font-semibold" : "text-white/80";
 
   return (
@@ -32,4 +41,3 @@ export default function OpeningHoursItem({
     </div>
   );
 }
-  
